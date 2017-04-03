@@ -3,11 +3,34 @@
     "configurations": [
         
         {
-            "name": "Debug Local File",
+            "name": "Test files",
             "type": "Ruby",
             "request": "launch",
             "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/main.rb"
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "test"
+            ]
+        },
+            {
+            "name": "Go to console",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "console"
+            ]
+        },
+          {
+            "name": "Go to console sandbox",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "console"
+            ]
         },
         {
             "name": "Listen for rdebug-ide",
