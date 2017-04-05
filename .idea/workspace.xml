@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4caf6b-bbab-4718-983e-f25cd91e0eda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -602,7 +601,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14045000" />
+    <option name="totallyTimeSpent" value="14201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
