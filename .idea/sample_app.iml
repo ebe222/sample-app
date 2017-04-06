@@ -168,7 +168,7 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="false" name="user_mailer_preview" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="user_mailer_preview" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="sample_app" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/test/mailers/previews" />
@@ -187,7 +187,7 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="false" name="development" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="development" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="sample_app" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/config/environments" />
