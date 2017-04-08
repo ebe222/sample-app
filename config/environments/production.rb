@@ -63,7 +63,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'ebe222-sample-app.herokuapp.com'
   config.action_mailer.default_url_options = {host: host}
-  AuctionMailer::Base.smtp_settings = {
+  ActionMailer::Base.smtp_settings = {
       :address      => 'smtp.sendgrid.net',
       :port         => '587',
       :authentication => :plain,
