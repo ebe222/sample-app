@@ -1,15 +1,12 @@
 if Rails.env.production?
 
-  require 'carrierwave'
+  config = Rails.application.config.x.settings["cloud_storage"]
 
-  CarrierWave.configure do |config|
-    config.fog_provider = 'fog/google'                        # required
-    config.fog_credentials = {
-        provider:                         'Google',
-        google_storage_access_key_id:     ENV['GOOGLE_STORAGE_ACCESS_KEY_ID'],
-        google_storage_secret_access_key: ENV['GOOGLE_STORAGE_SECRET_ACCESS_KEY']
-    }
-    config.fog_directory = ENV['GOOGLE_STORAGE_BUCKET_NAME']
+  FogStorage = Fog::Storage.new(
+      provider: "Google",
+      google_storage_access_key_id:     config["access_key_id"],
+      google_storage_secret_access_key: config["secret_access_key"]
+  )
+
+  StorageBucket = FogStorage.directories.new key: config["bucket"]
   end
-
-end

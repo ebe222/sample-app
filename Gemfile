@@ -33,6 +33,9 @@ gem 'bootstrap-sass',          '3.3.6'
 
 gem "fog-google"
 gem "google-api-client", ">= 0.6.2", "< 0.9"
+
+gem "google-cloud-datastore"
+
 gem "mime-types"
 
 # Use jquery as the JavaScript library
